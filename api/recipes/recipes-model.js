@@ -15,7 +15,7 @@ async function idyeGoreTarifGetir(recipe_id) {
 
 
         for(const step of steps) {
-            step.ingredients =await db("step_ingredients")
+            step.ingredients = await db("step_ingredients")
                 .join(
                     "ingredients",
                     "step_ingredients.ingredient_id",
